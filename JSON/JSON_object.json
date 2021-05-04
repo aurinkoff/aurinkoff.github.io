@@ -1,0 +1,18 @@
+{
+    "firstname": "Emily",
+    "height": 170,
+    "email": "h2el2378@gmail.com",
+    "city": {
+        "通訊地址": "台北",
+        "戶籍地址": "新竹"
+    },
+    "phone": {
+        "市話": "02-29881055",
+        "行動電話": "0933-852177"
+    },
+    "cars": [
+        "BMW",
+        "Nissan GT-R",
+        "Audi"
+    ]
+}

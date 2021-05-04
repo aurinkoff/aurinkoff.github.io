@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            background-color: #f5f5f5;
+        }
+
+        .papa {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .papa img {
+            width: 100%;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 讓圖片不要多出4px */
+        .wrap .img {
+            display: block;
+        }
+
+        .box {
+            margin: 15px;
+            /* margin空間算在物件尺寸內 畫地盤 */
+        }
+
+        .box .img {
+            position: relative;
+        }
+
+        .box .img .btn {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            height: 40px;
+            width: 570px;
+            line-height: 40px;
+        }
+
+        .box .img:hover .btn {
+            background-color: black;
+            color: white;
+            opacity: .6;
+            transition: 1s;
+        }
+
+
+        .box3 .img {
+            position: relative;
+        }
+
+        .box3 .img img {
+            display: block;
+        }
+
+        .box3 .img .btn {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            height: 40px;
+            width: 1200px;
+            line-height: 40px;
+        }
+
+        .box3 .img:hover .btn {
+            background-color: black;
+            color: white;
+            opacity: .6;
+            transition: 1s;
+        }
+
+
+
+
+        .box4 .img {
+            position: relative;
+        }
+
+        .box4 .img img {
+            display: block;
+        }
+
+        .box4 .img .btn {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .box4 .img:hover .btn {
+            background-color: black;
+            color: white;
+            opacity: .6;
+            transition: 1s;
+        }
+
+        .box img {
+            width: 570px;
+        }
+
+        .wrap1 {
+            width: 1200px;
+            margin: 100px auto;
+
+        }
+
+        .wrap1 img {
+            width: 1200px;
+        }
+
+        p {
+            color: rgb(146, 141, 141);
+        }
+
+        .a {
+            color: rgb(34, 33, 33);
+        }
+
+        .aa {
+            text-decoration: line-through;
+        }
+
+        .box4 {
+            width: 370px;
+            margin: 15px;
+            /* margin空間算在物件尺寸內 畫地盤 */
+        }
+
+
+        .wrap .box4 img {
+            display: block;
+            width: 100%;
+
+        }
+
+        .img.imgg img {
+            width: 470px;
+        }
+
+        .wrap {
+            width: 1200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrap .img {
+            display: block;
+        }
+
+
+        .wrap3 {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box5 {
+            margin: 15px;
+        }
+
+        .box5 .img.imgg img {
+            width: 370px;
+            display: flex;
+            display: block;
+        }
+
+        .box5 .img {
+            position: relative;
+        }
+
+        .box5 .img img {
+            display: block;
+        }
+
+
+        .box5 .img .btn {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            height: 40px;
+            width: 100%;
+            line-height: 40px;
+        }
+
+        .box5 .img:hover .btn {
+            background-color: black;
+            color: white;
+            opacity: .6;
+            transition: 1s;
+        }
+
+
+
+
+        .box {
+            margin: 15px;
+        }
+
+        .box .img {
+            position: relative;
+        }
+
+        .box .img .btn {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            height: 40px;
+            width: 100%;
+            line-height: 40px;
+        }
+
+        .box .img:hover .btn {
+            background-color: black;
+            color: white;
+            opacity: .6;
+            transition: 1s;
+        }
+
+        .box3 .img {
+            position: relative;
+        }
+
+        .box3 .img img {
+            display: block;
+        }
+
+        .box3 .img .btn {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            height: 40px;
+
+            line-height: 40px;
+        }
+
+        .box3 .img:hover .btn {
+            background-color: black;
+            color: white;
+            opacity: .6;
+            transition: 1s;
+        }
+        .rap{
+            width:1200px;
+            margin: 0 auto;    
+        }
+        .rap .box .img {
+            position: relative;
+        }
+        .box .img .btnn {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            height: 40px;
+            width: 570px;
+            line-height: 40px;
+        }
+
+        .box .img:hover .btnn {
+            background-color: black;
+            color: white;
+            opacity: .6;
+            transition: 1s;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="papa">
+        <img src="pic\2200x (3).png" alt="">
+    </div>
+    <div class="wrap">
+        <div class="box">
+            <div class="img">
+                <img src="pic\1000x (7).png" alt="">
+                <span class="btn">加入購物車</span>
+
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-拌雙粉 醋香豆瓣（1袋/3入）</p>
+                <p class="aa">NT$249</p>
+                <p>NT$239</p>
+            </div>
+        </div>
+        <div class="box">
+            <!-- 要把整個要定位的地方包起來,宣告相對定位,要定位的物件用絕對定位 -->
+            <div class="img">
+                <img src="pic\1000x (5).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+
+
+            <div class="text">
+                <p class="a">賈以食日-拌雙粉 醋香豆瓣（16袋/48入）</p>
+                <p class="aa">NT$3984</p>
+                <p>NT$3580</p>
+            </div>
+        </div>
+    </div>
+    <div class="wrap1">
+        <div class="box3">
+            <div class="img">
+                <img src="pic\2200x (1).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-角落小夥伴 寶貝麵三入綜合提袋組</p>
+                <p class="aa">NT$530</p>
+                <p>NT$499</p>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="box4">
+            <div class="img">
+                <img src="pic\600x (5).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+            <p class="a">賈以食日-角落小夥伴 寶貝麵（經典原味）</p>
+            <p>NT$159</p>
+        </div>
+
+        <div class="box4">
+            <div class="img">
+                <img src="pic\600x (3).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+            <p class="a">賈以食日-角落小夥伴 寶貝麵（綜合蔬菜）</p>
+            <p>NT$159</p>
+        </div>
+        <div class="box4">
+            <div class="img">
+                <img src="pic\600x.png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+            <p class="a">賈以食日-角落小夥伴 寶貝麵（南瓜地瓜）</p>
+            <p>NT$159</p>
+        </div>
+    </div>
+
+
+
+    <div class="wrap">
+        <div class="box">
+            <div class="img imgg">
+                <img src="pic\1000x (8).png" alt="">
+                <span class="btn">加入購物車</span>
+
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-干貝鍋燒意麵</p>
+                <p class="aa">NT$150</p>
+                <p>NT$138</p>
+            </div>
+        </div>
+        <div class="box">
+            <!-- 要把整個要定位的地方包起來,宣告相對定位,要定位的物件用絕對定位 -->
+            <div class="img imgg">
+                <img src="pic\1000x (3).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+
+
+            <div class="text">
+                <p class="a"> 賈以食日-干貝鍋燒意麵（1箱/16盒）</p>
+                <p class="aa">NT$2400</p>
+                <p>NT$2080</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <div class="box">
+            <div class="img imgg">
+                <img src="pic\1000x (6).png" alt="">
+                <span class="btn">加入購物車</span>
+
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-干貝鍋燒意麵</p>
+                <p class="aa">NT$238</p>
+                <p>NT$220</p>
+            </div>
+        </div>
+        <div class="box">
+            <!-- 要把整個要定位的地方包起來,宣告相對定位,要定位的物件用絕對定位 -->
+            <div class="img imgg">
+                <img src="pic\1000x (4).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+
+
+            <div class="text">
+                <p class="a"> 賈以食日-干貝鍋燒意麵（1箱/16盒）</p>
+                <p class="aa">NT$3808</p>
+                <p>NT$3360</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="papa">
+        <img src="pic\2200x (4).png" alt="">
+    </div>
+    <div class="wrap3">
+        <div class="box5">
+            <div class="img imgg">
+                <img src="pic\600x (9).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-麻花麵（1袋/4入） </p>
+                <p>NT$268</p>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="img imgg">
+                <img src="pic\600x (2).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-燒椒麵（1袋/4入） </p>
+                <p>NT$268</p>
+            </div>
+
+        </div>
+
+        <div class="box5">
+            <div class="img imgg">
+                <img src="pic\600x (7).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-麻薑麵（1袋/4入） </p>
+                <p>NT$268</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="box">
+            <div class="img imgg">
+                <img src="pic\1000x (2).png" alt="">
+                <span class="btn">加入購物車</span>
+
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-麻辣鴨血冬粉</p>
+                <p>NT$159</p>
+            </div>
+        </div>
+        <div class="box">
+            <!-- 要把整個要定位的地方包起來,宣告相對定位,要定位的物件用絕對定位 -->
+            <div class="img imgg">
+                <img src="pic\1000x (1).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+
+
+            <div class="text">
+                <p class="a"> 賈以食日-干貝鍋燒意麵（1箱/16盒）</p>
+                <p class="aa">NT$2400</p>
+                <p>NT$3180</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="rap"  >
+        <div class="box">
+            <div class="img">
+                <img src="pic\1000x (7).png" alt="">
+                <span class="btnn">加入購物車</span>
+
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-拌雙粉 醋香豆瓣（1袋/3入）</p>
+                <p class="aa">NT$249</p>
+                <p>NT$239</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+    <div class="papa">
+        <img src="pic\2200x.png" alt="">
+    </div>
+    <div class="wrap1">
+        <div class="box3">
+            <div class="img">
+                <img src="pic\2200x (2).png" alt="">
+                <span class="btn">加入購物車</span>
+            </div>
+            <div class="text">
+                <p class="a">賈以食日-2021 HAPPY 牛 YEAR 福箱</p>
+                <p>NT$999</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>

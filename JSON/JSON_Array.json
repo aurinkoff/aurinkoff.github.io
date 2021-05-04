@@ -1,0 +1,58 @@
+[
+    {
+        "firstname": "Emily",
+        "height": 170,
+        "email": "h2el2378@gmail.com",
+        "city": {
+            "通訊地址": "台北",
+            "戶籍地址": "新竹"
+        },
+        "phone": {
+            "市話": "02-29881055",
+            "行動電話": "0933-852177"
+        },
+        "cars": [
+            "BMW",
+            "Nissan GT-R",
+            "Audi"
+        ]
+    },
+    {
+        "firstname": "Iris",
+        "height": 156,
+        "email": "cjdslvls@gmail.com",
+        "city": {
+            "通訊地址": "美國",
+            "戶籍地址": "加州"
+        },
+        "phone": {
+            "市話": "9874445673",
+            "行動電話": "9874445673"
+        },
+        "cars": [
+            "Nissan GT-R",
+            "BMW",
+            "Audi"
+        ]
+    },
+    {
+        "firstname": "Jake",
+        "height": 180,
+        "email": "jakefjo442@gmail.com",
+        "city": {
+            "通訊地址": "新竹",
+            "戶籍地址": "台北"
+        },
+        "phone": {
+            "市話": "249249498492",
+            "行動電話": "249249498492"
+        },
+        "cars": [
+            "TOTOTA",
+            "BMW",
+            "YAMAHA",
+            "Nissan GT-R",
+            "Audi"
+        ]
+    }
+]

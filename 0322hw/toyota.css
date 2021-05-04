@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* .body{
+  width: 1200px;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  margin: auto;
+} */
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.head h1 {
+  height: 42px;
+  width: 1200px;
+  text-align: center;
+}
+
+.head span{
+  display: block;
+  width: 38px;
+  height: 4px;
+  margin: 18px auto 0;
+  background-color: #000000;
+}
+
+.Tabwrap {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  height: 150px;
+  padding:0 0 30px 0;
+}
+
+.Tabwrap .tab {
+  position: relative;
+  width: 1200px;
+  height: 38px;
+  margin-top: 50px;
+  margin-bottom: 97px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Tabwrap .tab .swiper {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.Tabwrap .tab .swiper .Nav {
+  padding: 0px;
+  margin: 5px;
+  border-color: #795012;
+  width: 184px;
+  height: 36px;
+  text-align: center;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid #b31c1c;
+  border-right: 1px #e5e5e9 dashed;
+  border-left: 1px #e5e5e9 dashed;
+  border-top: 1px #e5e5e9 dashed;
+}
+
+.Tabwrap .tab .swiper .Nav .NavCol {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+  background-color:  #b31c1c;
+}
+.Tabwrap .tab .swiper .Nav:hover .NavCol{
+  top: 0%;
+  transition: 0.3s;
+
+}
+.Tabwrap .tab .swiper .Nav:hover a{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: .3s;
+  color: white;
+}
+.Tabwrap .tab .swiper .Nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.scroll_1 {
+  width: 1200px;
+  height: 740px;
+  padding: 36px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.bag{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  position: relative;
+  margin: 0 0 36px 0;
+}
+.bag.bageven{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  position: relative;
+  margin: 0 0 36px 0;
+}
+.left{
+  width: 355px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
+  top:-36px;
+}
+.left.lefteven{
+  left: 53rem;
+}
+.LeftTop{
+width: 100%;
+height: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+background-color: #e7211b;
+}
+
+.left1 {
+  height: 100%;
+  width: 40%;
+  transform:rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 113px;
+  color: white;
+  margin: 10px 0 0 -8px;
+}
+.left2{
+  height: 100%;
+  width: 60%;
+}
+.left2 h1{
+  height: 100%;
+  width: 100%;
+  font-size: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LeftBottom{
+  color: white;
+  font-size: 20px;
+  height:100%;
+  margin: 20px;
+}
+.left3{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  text-align: left;
+}
+.LeftBottom .p1{
+font-size: 26px;
+display: block;
+margin: 5px 5px;
+/* text-align: justify; */
+}
+.LeftBottom p{
+  line-height: 34px;
+text-align: justify;
+
+}
+.right{
+  width: 439px;
+  height: 290px;
+  background-color: #EEEEEE;
+  z-index: -2;
+}
+.right.righteven{
+  width: 439px;
+  height: 290px;
+  background-color: #EEEEEE;
+  z-index: -2;
+  margin: 38px 190px;
+}
+.bottom{
+  width: 772px;
+  height: 275px;
+  position: absolute;
+  bottom: 0px;
+  background-color: thistle;
+  margin: 0 0 0 100px;
+  background-color: #eeeeee;
+}
+.sg
+{
+  display: flex;
+  align-items:center;
+  
+}
+.sg .Line{
+  background-color: red;
+  width:400px;
+  height: 4px;
+  /* 123 */
+  margin: 0 0 0 60px;
+}
+.bottomeven{
+  margin:  0 0 0 27rem ;
+}
+.bottomBag{
+  /* display: flex; */
+  /* flex-direction: column; */
+  height: 275px;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 30px 20px;
+  
+  line-height: 30px;
+  
+}
+.bottomBag h2{
+  color: #b31c1c;
+  /* padding: 0.5rem 0 0.5rem 0; */
+  padding-bottom: 10px;
+}
+.bottomBag h3{
+  /* width: 110px;
+  height: 30px; */
+  background-color: black;
+  color: white;
+  margin: 0 0 5px 0;
+  /* text-align: center; */
+  display: inline-block;
+}
+.bottomBag.odd{
+  /* display: flex; */
+  /* flex-direction: column; */
+  height: 275px;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  line-height: normal;
+}
+
+.bottomBag p{
+  padding: 0 0 5px 0;
+  display: list-item;
+  list-style: disc;
+  color: #635c5c;
+  list-style-position: inside;
+
+}
+.bag a{
+  width: 695px;height: 430px;
+  background-image: url("../0322hw/assets/asset 25.png");
+  position: absolute;
+  top:80.4px;
+  left: 295px;
+  z-index: -1;
+}
+.bag a.a2.aeven{
+  background-image: url("../0322hw/assets/asset 29.png");
+  width: 695px;height: 430px;
+  position: absolute;
+  top:80.4px;
+  left: 0px;
+  z-index: -1;
+}
+.bag a.a4.aeven{
+  background-image: url("../0322hw/assets/asset 35.png");
+  width: 695px;height: 430px;
+  position: absolute;
+  top:80.4px;
+  left: 0px;
+  z-index: -1;
+}
+/*# sourceMappingURL=toyota.css.map */
+.test{
+  width: 1200px;
+  height: 100vh;
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+}
+.test .mainArea{
+  width: 695px;
+  height: 430px;
+  background-image: url("../0322hw/assets/asset 25.png");
+}
+.test .mainArea{
+    position: relative;
+    margin: 0 auto;
+}
+.test .right{
+  position: absolute;
+  top: -4rem;
+  right: -5rem;
+}
+.test .left{
+  position: absolute;
+  top:-7.3rem;
+  left: -15rem;
+}
+.test .bottom{
+  position: absolute;
+  bottom: -14rem;
+  left: -18rem;
+}
+.test2 .left{
+  top: -6rem;
+  left: 32rem;
+}
+.test2 .bottom{
+  bottom: -13rem;
+  left: -19rem;
+}
