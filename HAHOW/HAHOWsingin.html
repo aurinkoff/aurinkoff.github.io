@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<style>
+    @media screen and (max-width:768px) {
+
+        .col-xs-0 {
+            flex: 0 0 0;
+            max-width: 0;
+            padding-right: 0;
+            padding-left: 0;
+
+        }
+
+        .boxleft {
+            background-color: white;
+        }
+
+        
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .bg-green {
+        background-color: #faa831;
+    }
+
+    .boxleft {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .boxleftinner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+    }
+
+    .pic-height {
+        height: 100vh;
+    }
+
+    .boxright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .boxrightinner {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 35%;
+    }
+
+    .boxrightinnertop {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .boxrightinner-1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+
+    }
+
+    .b-1-black {
+        background-color: #4267b2;
+        border-radius: 4px;
+        border: 1px solid #375da8;
+        display: flex;
+        justify-content: center;
+    }
+
+    .b-2-green {
+        background-color: #00b900;
+        border-radius: 4px;
+        border: 1px solid #019901;
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+    }
+/* 
+    /* .b-1-black:hover {
+        background-color: #395794
+    } */ */
+
+    .b-2-green:hover {
+        background-color: #03aa03;
+    }
+
+    .b-3-gray {
+        display: flex;
+        justify-content: center;
+    }
+
+    button img {
+        width: 10%;
+    }
+/* 
+    /* .b-3-gray:hover {
+
+        background-color: #e6e6e6;
+    } */ */
+
+    button {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.021), 0 6px 20px 0 rgba(0, 0, 0, 0.048);
+    }
+
+    .buttondiv {
+        display: flex;
+
+        align-content: space-around;
+        align-content: space-between;
+    }
+
+    input {
+        height: 30px;
+        width: 90%;
+        align-content: center;
+        align-items: center;
+    }
+
+    .bussines-a {
+        background-color: #1b717d;
+    }
+    .boxrightinnertop-a{
+        color: tomato;
+    }
+    #a-span {
+        text-decoration: none;
+        color: white;
+    }
+
+    .spantext {
+        color: white;
+    }
+
+    .buttonimg {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        margin-top: 6%;
+    }
+
+    .buttonimg-img {
+        width: 60%;
+        height: 60%;
+
+    }
+
+    .boxrightinnertopspan {
+        width: 50%;
+    }
+
+    .boxrightinnermiddle-2-input {
+        color: rgb(219, 213, 213);
+    }
+</style>
+
+
+<body>
+
+
+    <div class="container-fluid pic-height mh-100">
+        <div class="row justify-content-center">
+            <div class="boxleft  col-lg-5 p-0 bg-green col-md-5 col-sm-5 col-xs-0">
+                <div class="boxleftinner pic-height">
+                    <div class="none m-3">
+                    </div>
+                    <a href="">
+                        <img src="https://hahow.in/static/media/logo-white.e547f0d1.svg" alt="" class="my-4 ">
+                    </a>
+                    <p class="m-b-2 text-white">今天也要透過學習，成為更好的自己</p>
+                    <img src="https://hahow.in/static/media/slogan-signup-0.ed92fb45.svg" alt="" class="col-xs-0">
+                </div>
+            </div>
+
+            <div class="boxright  col-lg-7 p-0 col-md-7 col-sm-7">
+                <div class="boxrightinner-1 p-4">
+                    <div class="boxrightinner col-lg-5 p-0 col-md-7 col-sm-7">
+                        <div class="boxrightinnertop ">
+                            <div class="boxrightinnertop-span"><span style="font-size: 30px;">註冊</span></div>
+                            <div class="boxrightinnertop-right d-flex align-items-center">已經註冊，<a href="#" class="boxrightinnertop-a">登入</div>
+                        </div>
+
+                        <button class="my-3 b-1-black buttondiv">
+
+                            <div class="buttonimg">
+                                <img src="https://hahow.in/static/media/line-icon.8c2f2751.svg" alt=""
+                                    class="lzvlq8-5 iqNXtm  buttonimg-img">
+                            </div>
+                            <div class="buttonspan"><span class="spantext">使用FACEBOOK繼續</span></div>
+                        </button>
+                        <button class="my-3 b-2-green buttondiv ">
+                            <div class="buttonimg">
+                                <img src="https://hahow.in/static/media/line-icon.8c2f2751.svg" alt=""
+                                    class="lzvlq8-5 iqNXtm buttonimg-img ">
+                            </div>
+                            <div class="buttonspan"><span class="spantext">使用LINE繼續</span></div>
+                        </button>
+                        <button class="my-3 b-3-gray "
+                            style="background-color: #000000 opacity 12.0%;border-radius: 4px;border: 1px solid #e4e4e4;">
+                            <img alt="Google"
+                                src="data:image/png;base64,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"
+                                class="lzvlq8-5 iqNXtm mr-3"><span>使用GOOGLE繼續</span> </button>
+
+                        <div class="boxrightinnermiddle d-flex justify-content-center my-3">
+                            <div class="text-muted">-----</div>
+                            <span class="text-muted">或使用 Hahow 帳號密碼登入</span>
+                            <div class="text-muted">-----</div>
+                        </div>
+                        <div class="boxrightinnermiddle-2">
+                            <div class="boxrightinnermiddle-2icon">
+                                <i class="fas fa-user"></i>
+                                <input placeholder="帳號(限4-21碼小寫英文數字)" type="text"
+                                    class="my-2 boxrightinnermiddle-2-input">
+                            </div>
+                            <div class="boxrightinnermiddle-2icon">
+                                <i class="far fa-envelope"></i>
+                                <input placeholder="信箱" type="text" class="my-2 boxrightinnermiddle-2-input">
+                            </div>
+                            <div class="boxrightinnermiddle-2icon">
+                                <i class="fas fa-unlock-alt"></i>
+                                <input placeholder="密碼" type="text" class="my-2 boxrightinnermiddle-2-input">
+                            </div>
+                            <div class="boxrightinnermiddle-2icon">
+                                <i class="fas fa-unlock-alt"></i>
+                                <input placeholder="再次輸入密碼" type="text" class="my-2 boxrightinnermiddle-2-input">
+                            </div>
+                            <button disabled type="submit" class="my-2 d-flex justify-content-center">註冊</button>
+                        </div>
+                        <div class="flex justify-content-center desc marg-tb-10">註冊即同意 <a class="text-link"
+                                target="_blank" href="/privacy">隱私權政策</a> 和 <a class="text-link" target="_blank"
+                                href="/terms">使用者條款</a></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
