@@ -177,14 +177,24 @@
         width: 50%;
     }
 
+    .boxrightinnertop-nowrap {
+        white-space: nowrap;
+    }
+
+    .xs-right-title {
+        display: none;
+    }
+
     @media screen and (max-width:768px) {
 
         .col-xs-0 {
-            flex: 0 0 0;
-            max-width: 0;
-            padding-right: 0;
-            padding-left: 0;
+            display: none;
+        }
 
+        .xs-right-title {
+            display: flex;
+            margin-bottom: 2rem;
+            flex-direction: column;
         }
 
         .boxleft {
@@ -205,6 +215,17 @@
 
         .boxrightinner {
             width: 60%;
+        }
+
+        .boxrightinner-1 {
+            background: aliceblue;
+        }
+        .text-gray{
+            color: rgb(88, 88, 88);
+
+        }
+        .xs-right-img{
+            width: 50%;
         }
     }
 </style>
@@ -230,13 +251,22 @@
             <div class="boxright  col-lg-7 p-0 col-md-7 col-sm-7">
                 <div class="boxrightinner-1 p-4">
                     <div class="boxrightinner col-lg-5 p-0 col-md-7 col-sm-7">
+                        <div class="xs-right-title">
+                            <a href="">
+                                <img src="https://hahow.in/static/images/logo.svg" alt="" class="my-4 xs-right-img">
+                            </a>
+                            <b class="m-b-2 text-gray">今天也要透過學習，成為更好的自己</b>
+
+                        </div>
                         <div class="boxrightinnertop ">
                             <div class="boxrightinnertop-span ">
-                                <span class="boxrightinnertop-fontsize boxrightinnertop-fontsize-login">登入</span>
+                                <span
+                                    class="boxrightinnertop-fontsize boxrightinnertop-fontsize-login boxrightinnertop-nowrap">登入</span>
                             </div>
-                            <div class="boxrightinnertop-right d-flex align-items-center boxrightinnertop-fontsize">
+                            <div
+                                class="boxrightinnertop-right d-flex align-items-center boxrightinnertop-fontsize boxrightinnertop-nowrap">
                                 沒有帳號，
-                                <a href="#" class="boxrightinnertop-fontsize">快速註冊</a>
+                                <a href="#" class="boxrightinnertop-fontsize boxrightinnertop-nowrap">快速註冊</a>
                             </div>
                         </div>
 
