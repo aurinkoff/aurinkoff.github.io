@@ -14,27 +14,14 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <style>
-    @media screen and (max-width:768px) {
-
-        .col-xs-0 {
-            flex: 0 0 0;
-            max-width: 0;
-            padding-right: 0;
-            padding-left: 0;
-
-        }
-
-        .boxleft {
-            background-color: white;
-        }
-
-
-    }
-
     * {
         padding: 0;
         margin: 0;
         list-style: none;
+    }
+
+    .boxrightinnertop-fontsize-singin {
+        font-size: 30px;
     }
 
     *::selection {
@@ -42,7 +29,7 @@
         color: #fff;
     }
 
-    .bg-green {
+    .bg-orange {
         background-color: #faa831;
     }
 
@@ -119,16 +106,21 @@
     }
 
     /* 
-    /* .b-1-black:hover {
+    .b-1-black:hover {
         background-color: #395794
-    } */
-    */ .b-2-green:hover {
+    }
+    */
+    .b-2-green:hover {
         background-color: #03aa03;
     }
 
     .b-3-gray {
         display: flex;
         justify-content: center;
+    }
+
+    .boxrightinnertop-fontsize {
+        font-size: medium;
     }
 
     button img {
@@ -180,8 +172,8 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        align-content: space-around;
-        margin-top: 6%;
+        align-items: center;
+
     }
 
     .buttonimg-img {
@@ -197,6 +189,50 @@
     .boxrightinnermiddle-2-input {
         color: rgb(219, 213, 213);
     }
+
+    .boxrightinnertop-nowrap {
+        white-space: nowrap;
+    }
+
+    @media screen and (max-width:768px) {
+
+        .col-xs-0 {
+            flex: 0 0 0;
+            max-width: 0;
+            padding-right: 0;
+            padding-left: 0;
+
+        }
+
+        .boxleft {
+            background-color: white;
+        }
+
+        .buttonspan {
+            font-size: small;
+        }
+
+        .boxrightinnertop-fontsize {
+            font-size: medium;
+        }
+
+        .boxrightinnertop-fontsize-login {
+            font-size: xx-large;
+        }
+
+        .boxrightinner {
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        .boxrightinnertop-fontsize-signin {
+            font-size: x-large;
+        }
+        .boxrightinnertop-nowrap {
+        white-space: nowrap;
+    }
+    }
 </style>
 
 
@@ -205,7 +241,7 @@
 
     <div class="container-fluid pic-height mh-100">
         <div class="row justify-content-center">
-            <div class="boxleft  col-lg-5 p-0 bg-green col-md-5 col-sm-5 col-xs-0">
+            <div class="boxleft  col-lg-5 p-0 bg-orange col-md-5 col-sm-5 col-xs-0">
                 <div class="boxleftinner pic-height">
                     <div class="none m-3">
                     </div>
@@ -221,9 +257,12 @@
                 <div class="boxrightinner-1 p-4">
                     <div class="boxrightinner col-lg-5 p-0 col-md-7 col-sm-7">
                         <div class="boxrightinnertop ">
-                            <div class="boxrightinnertop-span"><span style="font-size: 30px;">註冊</span></div>
-                            <div class="boxrightinnertop-right d-flex align-items-center">已經註冊，<a href="#"
-                                    class="boxrightinnertop-a">登入</div>
+                            <div class="boxrightinnertop-fontsize ">
+                                <span class="boxrightinnertop-fontsize-singin boxrightinnertop-nowrap">註冊</span>
+                            </div>
+                            <div class="boxrightinnertop-right d-flex align-items-center boxrightinnertop-nowrap">已經註冊，
+                                <a href="#" class="boxrightinnertop-a boxrightinnertop-nowrap">登入</a>
+                            </div>
                         </div>
 
                         <button class="my-3 b-1-black buttondiv">
@@ -239,7 +278,7 @@
                                 <img src="https://hahow.in/static/media/line-icon.8c2f2751.svg" alt=""
                                     class="lzvlq8-5 iqNXtm buttonimg-img ">
                             </div>
-                            <div class="buttonspan"><span class="spantext">使用LINE繼續</span></div>
+                            <div class="buttonspan"><span class="spantext">使用LINE繼續&emsp;&emsp;&emsp;</span></div>
                         </button>
                         <button class="my-3 b-3-gray "
                             style="background-color: #000000 opacity 12.0%;border-radius: 4px;border: 1px solid #e4e4e4;">
@@ -248,9 +287,9 @@
                                 class="lzvlq8-5 iqNXtm mr-3"><span>使用GOOGLE繼續</span> </button>
 
                         <div class="boxrightinnermiddle d-flex justify-content-center my-3">
-                            <div class="text-muted">-----</div>
+                            <div class="text-muted">--</div>
                             <span class="text-muted">或使用 Hahow 帳號密碼登入</span>
-                            <div class="text-muted">-----</div>
+                            <div class="text-muted">--</div>
                         </div>
                         <div class="boxrightinnermiddle-2">
                             <div class="boxrightinnermiddle-2icon">
