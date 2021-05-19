@@ -21,16 +21,22 @@
         list-style: none;
     }
 
+    *::selection {
+        background: #00bea4;
+        color: #fff;
+    }
+
     .main-width {
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgb(255, 226, 223);
+        background-color: rgb(255, 224, 217);
     }
 
     .main {
         display: flex;
+        box-shadow: 3px 3px 5px 6px #cccccc;
     }
 
     .main-width img {
@@ -83,6 +89,9 @@
     /* z-index */
     .test-8 {
 
+        border-radius: 0 0 6rpx 6rpx;
+        box-shadow: 0rpx 0rpx 10rpx 0rpx rgba(4, 0, 0, .2);
+
         position: fixed;
         /*固定位置定位*/
         top: 4rem;
@@ -104,9 +113,11 @@
         /* position: relative; */
         text-align: center;
     }
+
     .fontsize-p {
         font-size: 23px;
     }
+
     .test-gray {
         background-color: rgb(99, 112, 124);
         display: block;
@@ -183,6 +194,7 @@
 <body>
     <div class="container-fluid test-gray">
         <div class="row ">
+        
             <div class="main test-8">
 
                 <div class="main-width">
@@ -260,7 +272,7 @@
 
             </div>
             <div class="test-b">
-                <p class="fontsize-p mb-8">----   Hahow 好學校 - 最有趣的線上教學平台   ----</p>
+                <p class="fontsize-p mb-8">---- Hahow 好學校 - 最有趣的線上教學平台 ----</p>
                 <div class=" my-16 mx-0">
                     Hahow 好學校 © All Rights Reserved.</div>
             </div>
