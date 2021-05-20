@@ -131,11 +131,15 @@
         /*距離上方 0 像素*/
         z-index: 1;
         /*重疊時會在其他元素之上*/
-        color: rgba(0, 0, 0, 0.65);
-        text-align: center;
         background-color: springgreen;
-        display: flex;
-        flex-direction: column;
+        border-radius: .4rem;
+    }
+
+    .button-fixed-text {
+        color: whitesmoke;
+        writing-mode: vertical-lr;
+        font-weight: bolder;
+        padding: 0.3rem 0.4rem;
     }
 
     .button-fixed:hover {
@@ -146,22 +150,14 @@
     .fontsize {
         color: rgba(0, 0, 0, 0.65);
     }
-
-    /* 
-    @media (min-width: 768px) {
-        .test-8 {
-            height: 640px;
-            width: 580px;
-        }
-        .fontsize {
-            color: rgba(0, 0, 0, 0.65);
-        }
-        .main-width {
-            flex-direction: column;
-            height: 640px;
-            width: 580px;
-        }
+    .button-confirm{
+        margin:1.5rem 0;
+    }
+    /* .rememberme{
+        margin-top: 2rem;
     } */
+.button-border{width: 180px;height: 40px;
+border-radius: 20px;}
     @media (max-width: 922px) {
         .fontsize {
             color: white;
@@ -171,6 +167,10 @@
             padding: 16px;
             position: relative;
             z-index: 3;
+        }
+
+        .test-b {
+            margin-top: 6rem;
         }
 
         .span-color {
@@ -230,7 +230,7 @@
 
         .test-b-p {
             width: 886.4px;
-            height: 130.4px;
+            /* height: 130.4px; */
         }
 
         .label-width {
@@ -246,6 +246,10 @@
         input {
             width: auto;
         }
+
+        .button-fixed {
+            display: none;
+        }
     }
 
 
@@ -255,6 +259,10 @@
             flex-direction: column;
             height: 560px;
             width: 880px;
+        }
+        .label-width{
+            width: 100%;
+            height: 2rem;
         }
 
         .test-8 {
@@ -339,7 +347,7 @@
                         </div>
                         <div class="input-div ant-row ant-legacy-form-item inline-block w-full" style="row-gap: 0px;">
                             <div class="ant-col ant-legacy-form-item-control-wrapper">
-                                <div class="ant-legacy-form-item-control has-success">
+                                <div class="rememberme">
                                     <span class="ant-legacy-form-item-children">
                                         <label class="ant-checkbox-wrapper ant-checkbox-wrapper-checked">
                                             <span class="ant-checkbox ant-checkbox-checked">
@@ -358,9 +366,9 @@
                         <div class="ant-row ant-legacy-form-item" style="row-gap: 0px;">
                             <div class="ant-col ant-legacy-form-item-control-wrapper">
                                 <div class="ant-legacy-form-item-control"><span class="ant-legacy-form-item-children">
-                                        <div class="flex justify-end mt-16"><button brand="secondary"
+                                        <div class="d-flex justify-content-end button-confirm"><button brand="secondary"
                                                 theme="[object Object]" width="180px" data-test-id="form-submit-button"
-                                                type="submit" class="ant-btn qmv3rp-0 cSRPNQ"
+                                                type="submit" class="button-border"
                                                 disabled=""><span>確認</span></button></div>
                                     </span></div>
                             </div>
@@ -377,8 +385,11 @@
                 <div class=" my-16 mx-0">
                     Hahow 好學校 © All Rights Reserved.</div>
             </div>
+
+            <!-- 回饋 -->
             <button class="button-fixed">
-                <div class="">回饋</div>
+                <div class="button-fixed-text">回饋&nbsp;<i class="far fa-comment-dots" style="color: white;"></i></div>
+
                 <div class="_hj-u1G5O__MinimizedWidgetMiddle__emotionIcon">
                     <div
                         class="_hj-qoDG___EmotionIconDefault__iconEmotionDefault _hj-3e6MN__styles__icon _hj-1BEBR__EmotionIconDefault__like">
