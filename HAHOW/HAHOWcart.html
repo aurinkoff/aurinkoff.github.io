@@ -36,8 +36,52 @@
         min-height: 600px;
         margin: 60px 25px;
     }
-    @media (max-width: 1200px){
-        .cart-area{
+
+    .vertical-horizontal-center {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .pad-tb-100 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .marg-b-10 {
+        margin-bottom: 10px;
+    }
+
+    .fBQVEd {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid rgb(250, 139, 0);
+        white-space: nowrap;
+        user-select: none;
+        font-weight: 400;
+        background-color: rgb(250, 139, 0);
+        color: white;
+        padding: 5px 40px;
+        font-size: 20px;
+        border-radius: 3px;
+        min-width: 260px;
+        line-height: 1.8em;
+    }
+
+    .text-center {
+        text-align: center;
+        width: 260px;
+        height: 216px;
+    }
+
+    @media (max-width: 1200px) {
+        .cart-area {
             width: 100%;
         }
     }
@@ -57,14 +101,13 @@
                             </span>
                         </h4>
                         <hr>
-                        <div>
+                        <div class="pt-6rem">
                             <div class="vertical-horizontal-center pad-tb-100">
                                 <div class="text-center"><img alt="Empty shopping cart" class="marg-b-10"
                                         src="https://hahow.in/static/media/empty-box.e2bf3c3b.svg" style="width: auto;">
                                     <div class="marg-b-10">購物車是空的，來去逛逛？</div><a href="#">
-                                        <button
-                                            class="sc-1a6j6ze-0 fBQVEd">探索課程</button>
-                                        </a>
+                                        <button class="sc-1a6j6ze-0 fBQVEd">探索課程</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
