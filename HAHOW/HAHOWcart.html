@@ -29,8 +29,8 @@
 
     .cart-area {
         margin-bottom: 60px;
-        width: 850px;
-        height: 463px;
+        width: 55vw;
+        height: 75vh;
     }
 
     .main-container {
@@ -51,7 +51,7 @@
 
     .pad-tb-100 {
         padding-top: 100px;
-        padding-bottom: 100px;
+        /* padding-bottom: 100px; */
     }
 
     .marg-b-30 {
@@ -175,13 +175,91 @@
         width: 100%;
     }
 
+    .paid-in-twd {
+        font-size: 14px;
+        color: rgb(250, 139, 0);
+        margin: .5rem;
+    }
+
     .marg-t-20 {
         margin-top: 20px;
     }
 
+    .entry {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .total-amount h3 {
+        display: inline-block;
+        color: rgb(250, 139, 0);
+    }
+
+    /* 
+    .sticky-inner-wrapper {
+        position: fixed;
+        transform: translate3d(0px, 110px, 0px);
+        width: 260px;
+        top: 0px;
+    } */
+    .sticky-inner-wrapper {
+            position: fixed;
+            width: 18%;
+        }
     @media (max-width: 1200px) {
         .cart-area {
             width: 100%;
+        }
+
+        .cart-area {
+            /* margin-bottom: 60px; */
+            width: 55vw;
+            height: 75vh;
+        }
+
+        .sticky-inner-wrapper {
+            position: fixed;
+            width: 20%;
+        }
+    }
+    
+
+    @media (max-width: 768px) {
+        .cart-area {
+            /* margin-bottom: 60px; */
+            width: 90vw;
+            height: 75vh;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .sticky-inner-wrapper {
+            /* position: absolute; */
+            /* transform: translate3d(0px, 110px, 0px); */
+            margin-top: .5rem;
+            position: static;
+            width: 100%;
+            top: 0px;
+        }
+
+        .left-area {
+            display: flex;
+        }
+
+        .right-area {
+            flex: 0 1 260px;
+            order: 2;
+            margin-left: 0;
+            /* background-color: white; */
+        }
+
+        .pad-tb-100 {
+            padding-top: 100px;
+            /* padding-bottom: 100px; */
         }
     }
 </style>
@@ -192,16 +270,17 @@
 
         <div class="content-1">
             <div class="main-container">
+                <!-- 右邊 -->
                 <div class="right-area">
                     <div class="sticky-outer-wrapper active" style="height: 318.4px;">
-                        <div class="sticky-inner-wrapper "
-                            style="position: fixed; transform: translate3d(0px, 110px, 0px); width: 260px; top: 0px;">
+                        <div class="sticky-inner-wrapper ">
                             <div class="sc-1t3czdh-0 dfcsU pad-rl-15 pad-b-20 marg-b-20">
                                 <div class="sc-1t3czdh-2  gjCOGK">
                                     <div class="border-bottom-box">
                                         <h6><b>訂單明細</b></h6>
 
                                     </div>
+                                    <!-- 小記>約0 -->
                                     <div class="border-bottom-box">
                                         <div class="entry sub-total"><span class="title">小計</span><span
                                                 class="ntd">NT$0</span></div>
@@ -222,25 +301,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <!-- 左邊~ -->
                 <div class="left-area">

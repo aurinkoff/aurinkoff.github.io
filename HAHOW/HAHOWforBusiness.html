@@ -150,14 +150,25 @@
     .fontsize {
         color: rgba(0, 0, 0, 0.65);
     }
-    .button-confirm{
-        margin:1.5rem 0;
+
+    .button-confirm {
+        margin: 1.5rem 0;
     }
+
     /* .rememberme{
         margin-top: 2rem;
     } */
-.button-border{width: 180px;height: 40px;
-border-radius: 20px;}
+    .button-border {
+        width: 180px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    @media (max-width: 903px){
+        .main{
+            display: flex;
+            
+        }
+    }
     @media (max-width: 922px) {
         .fontsize {
             color: white;
@@ -228,10 +239,7 @@ border-radius: 20px;}
             background-size: cover;
         }
 
-        .test-b-p {
-            width: 886.4px;
-            /* height: 130.4px; */
-        }
+        
 
         .label-width {
             width: 268px;
@@ -260,7 +268,8 @@ border-radius: 20px;}
             height: 560px;
             width: 880px;
         }
-        .label-width{
+
+        .label-width {
             width: 100%;
             height: 2rem;
         }
@@ -368,8 +377,8 @@ border-radius: 20px;}
                                 <div class="ant-legacy-form-item-control"><span class="ant-legacy-form-item-children">
                                         <div class="d-flex justify-content-end button-confirm"><button brand="secondary"
                                                 theme="[object Object]" width="180px" data-test-id="form-submit-button"
-                                                type="submit" class="button-border"
-                                                disabled=""><span>確認</span></button></div>
+                                                type="submit" class="button-border" disabled=""><span>確認</span></button>
+                                        </div>
                                     </span></div>
                             </div>
                         </div>
