@@ -23,12 +23,23 @@
         margin: 0px 15px;
     }
 
-    .hfxheR .main-container {
+    .cart-area {
+        margin-bottom: 60px;
+        width: 850px;
+        height: 463px;
+    }
+
+    .main-container {
         display: flex;
         width: 100%;
         max-width: 1140px;
         min-height: 600px;
         margin: 60px 25px;
+    }
+    @media (max-width: 1200px){
+        .cart-area{
+            width: 100%;
+        }
     }
 </style>
 
@@ -38,8 +49,37 @@
         <div class="content-1">
             <div class="main-container">
                 <div class="right-area"></div>
-                <div class="left-area"></div>
+                <div class="left-area">
+                    <div class="cart-area marg-b-60">
+                        <h4 class="underline flex align-items-center justify-space-between m-3">
+                            <span><span aria-hidden="true" class="fa fa-shopping-cart"></span>
+                                <spanclass="marg-l-10">購物車</spanclass=>
+                            </span>
+                        </h4>
+                        <hr>
+                        <div>
+                            <div class="vertical-horizontal-center pad-tb-100">
+                                <div class="text-center"><img alt="Empty shopping cart" class="marg-b-10"
+                                        src="https://hahow.in/static/media/empty-box.e2bf3c3b.svg" style="width: auto;">
+                                    <div class="marg-b-10">購物車是空的，來去逛逛？</div><a href="#">
+                                        <button
+                                            class="sc-1a6j6ze-0 fBQVEd">探索課程</button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
+
+
+
+
+
         </div>
 
     </main>
