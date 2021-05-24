@@ -92,7 +92,9 @@
         min-height: 600px;
         margin: 60px 25px;
     }
-
+    .container-fluid{
+        height: 138vh;
+    }
     .vertical-horizontal-center {
         display: flex;
         -webkit-box-align: center;
@@ -143,8 +145,12 @@
     .right-area {
         flex: 0 1 260px;
         order: 2;
-        margin-left: 30px;
+        margin-left: -13px;
+        width: 260px;
+        position: sticky;
+        top: 5rem;
         /* background-color: white; */
+        
     }
 
     .dfcsU {
@@ -255,8 +261,10 @@
         top: 0px;
     } */
     .sticky-inner-wrapper {
-        position: fixed;
-        width: 18%;
+        /* position: fixed; */
+        /* width: 100%; */
+        position: sticky;
+        top: 5rem;
     }
 
     /* 頁尾 */
@@ -302,6 +310,10 @@
             width: 100%;
         }
 
+        .totallyheight {
+            height: 110vh;
+        }
+
         .cart-area {
             /* margin-bottom: 60px; */
             width: 55vw;
@@ -328,15 +340,17 @@
 
         }
 
+        .sticky-outer-wrapper {
+            width: 90vw;
+        }
+
         .sticky-inner-wrapper {
-            /* position: absolute; */
-            /* transform: translate3d(0px, 110px, 0px); */
+
             margin-top: .5rem;
             position: static;
             width: 100%;
             top: 0px;
         }
-
         .left-area {
             display: flex;
         }
@@ -344,7 +358,8 @@
         .right-area {
             flex: 0 1 260px;
             order: 2;
-            margin-left: 0;
+            margin-left: -14;
+
             /* background-color: white; */
         }
 
@@ -525,10 +540,10 @@
     <main class="content container-fluid">
 
         <div class="content-1">
-            <div class="main-container">
+            <div class="main-container totallyheight">
                 <!-- 右邊 -->
                 <div class="right-area">
-                    <div class="sticky-outer-wrapper active" style="height: 318.4px;">
+                    <div class="sticky-outer-wrapper active" style="height: 100%;">
                         <div class="sticky-inner-wrapper ">
                             <div class="sc-1t3czdh-0 dfcsU pad-rl-15 pad-b-20 marg-b-20">
                                 <div class="sc-1t3czdh-2  gjCOGK">
